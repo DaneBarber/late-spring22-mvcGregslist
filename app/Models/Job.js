@@ -8,7 +8,6 @@ export class Job {
     this.title = jobData.title
     this.description = jobData.description
     this.startingSalary = jobData.startingSalary
-    this.starts = jobData.starts
     this.color = jobData.color
     this.imgUrl = jobData.imgUrl
   }
@@ -20,7 +19,6 @@ export class Job {
     <div class="rounded shadow p-2" ">
       <img class="img-fluid" src="${this.imgUrl}" alt="">
       <h5 class="text-center">${this.title} | ${this.startingSalary}}</h5>
-      <h4 class="text-center">$${this.price}</h4>
       <p>${this.description}</p>
       <input class="w-100" type="color" value="${this.color}">
       <button class="btn btn-danger" onclick="app.carsController.deleteCar('${this.id}')"><i class="mdi mdi-delete"></i></button>
